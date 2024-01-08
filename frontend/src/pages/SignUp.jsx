@@ -1,6 +1,7 @@
 import React from "react";
 import signupImg from "../assets/images/signup.png";
 import avatar from "../assets/images/avatar-icon.png"
+import { Link } from "react-router-dom";
 const SignUp = () => {
   return (
     <section>
@@ -82,12 +83,26 @@ const SignUp = () => {
                 accept=".jpg, .png"
                 className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
                 />
-              <label htmlFor="customFile" className="absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem]py[0.375rem] text-[15px] leading-6 overflow-hidden"></label>
+              <label htmlFor="customFile"
+               className="absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem]  py-[0.375rem] text-[15px] leading-6 overflow-hidden bg-[#0066ff46] text-headingColor font-semibold rounded-lg truncate cursor-pointer">Upload Photo</label>
 
                </div>
 
+              </div>
 
+              <div className="mt-7">
+           <button
+           type="submit"
+           className="w-full bg-primaryColor text-white text-[18px] leading-[30px] rounded-lg px-4 py-3">
+            Sign Up
+           </button>
+          <p className="mt-5 text-textColor text-center">
+            Already have an account?
 
+           <Link to="/login" className="text-primaryColor font-medium ml-1">Login
+           </Link>
+          </p>
+                
               </div>
             </form>
           </div>
