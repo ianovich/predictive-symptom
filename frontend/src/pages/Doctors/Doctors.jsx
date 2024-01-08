@@ -5,7 +5,7 @@ const Doctors = () => {
     <>
       <section className="bg-[#fff9ea]">
         <div className="container text-center">
-          <h2 className="heading">Find a Doctor</h2>
+          <h2 className="heading">Find A Doctor</h2>
           <div className="max-w-[570px] mt-[30px] mx-auto bg-[#006ff2c] rounded-md flex items-center justify-between">
             <input
               type="search"
