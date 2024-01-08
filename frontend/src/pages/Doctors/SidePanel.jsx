@@ -22,7 +22,7 @@ SidePanel
   <p className='text-[15px] leading-6 text-textColor font-semibold'>2:30PM-7:30PM</p>
   </li><li className='flex items-center justify-between mb-2'>
   <p className='text-[15px] leading-6 text-textColor font-semibold'>Thursday</p>
-  <p className='text-[15px] leading-6 text-textColor font-semibold'>2:30PM-7:30PM</p>
+  <p className='text-[15px] leading-6 text-textColor font-semibold'>4:30PM-7:30PM</p>
   </li>
 </ul>
 
