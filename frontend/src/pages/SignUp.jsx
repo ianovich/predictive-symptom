@@ -1,5 +1,6 @@
 import React from "react";
 import signupImg from "../assets/images/signup.png";
+import avatar from "../assets/images/avatar-icon.png"
 const SignUp = () => {
   return (
     <section>
@@ -8,7 +9,7 @@ const SignUp = () => {
           {/*----img box---- */}
           <div className="hidden lg:block ">
             <figure>
-              <img src={signupImg} />
+              <img src={signupImg} width={600} height={450} typeof="image/png" />
             </figure>
           </div>
           {/*----sign up-----*/}
@@ -49,14 +50,43 @@ const SignUp = () => {
               </div>
 
               <div className="mb-5 flex items-center justify-between">
-              <label htmlFor="" className="text-headingColor font-bold text-[16px] leading-7">
+              <label  className="text-headingColor font-bold text-[16px] leading-7">
                 Are you a:
                 <select name="role" className="text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none">
-             <option value=""></option>
-             <option value=""></option>
+             <option value="patient">Patient</option>
+             <option value="doctor">Doctor</option>
 
                 </select>
               </label>
+              <label  className="text-headingColor font-bold text-[16px] leading-7">
+                Gender:
+                <select name="role" className="text-textColor font-semibold text-[15px] leading-7 px-4 py-3 focus:outline-none">
+             <option value="male">Male</option>
+             <option value="female">Female</option>
+
+                </select>
+              </label>
+
+              </div>
+
+              <div className="mb-5 flex items-center gap-3">
+                 <figure className="w-[60px] h-[60px] rounded-full border-2 border-solid border-primaryColor flex items-center justify-center">
+               <img src={avatar}alt="" className="w-full rounded-full"/>
+                 </figure>
+
+               <div className="relative w-[130px] h-[50px]">
+                <input
+                 type="file"
+                name="photo"
+                id="customFile"
+                accept=".jpg, .png"
+                className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer"
+                />
+              <label htmlFor="customFile" className="absolute top-0 left-0 w-full h-full flex items-center px-[0.75rem]py[0.375rem] text-[15px] leading-6 overflow-hidden"></label>
+
+               </div>
+
+
 
               </div>
             </form>
