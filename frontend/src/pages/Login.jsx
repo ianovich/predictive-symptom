@@ -43,7 +43,7 @@ const handleInputChange = e=>{
 
 </div>
 <p className="mt-5 text-textColor text-center?">Don't Have an Account
-<Link to='/register'></Link>
+<Link to='/register' className="text-primaryColor font-medium ml-2 ">Register</Link>
 </p>
     </form>
     </div>
